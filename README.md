@@ -1,4 +1,5 @@
 # minecraft-region
+[![CodeFactor](https://www.codefactor.io/repository/github/wllr9505/minecraft-region/badge)](https://www.codefactor.io/repository/github/wllr9505/minecraft-region)
 
 Detecte os arquivos *r.x.z.mca* onde se encontram usas construções.
 
