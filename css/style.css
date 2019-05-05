@@ -1,0 +1,163 @@
+body {
+    font-family: consolas, monospace, Courier;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(../imgs/bg.png);
+    background-size: 20%;
+    background-color: #ffffff;
+    user-select: none;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#main {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 20% 65% 15%;
+    grid-template-areas: "header"
+                         "app"
+                         "footer";
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+}
+
+#header {
+    grid-area: header;
+    text-align: center;
+    font-size: 2vh;
+    font-weight: bold;
+}
+
+#title {
+    font-size: 5vh;
+    display: grid;
+    align-items: center;
+    height: 60%;
+    width: 100%;
+}
+
+.scrollMenu {
+    grid-area: scrollMenu;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    overflow: auto;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.scrollMenu  a {
+    align-items: center;
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 9px;
+    margin: 0px 10px 0 10px;
+}
+
+.scrollMenu  a:hover {
+    align-items: center;
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    text-shadow: 1.5px 1.5px 1px #1f1f1f;
+    box-shadow: 0 0 0 3px #24241b;
+    border-top: #64d055;
+    border-left: #64d055;
+    border-right: #0f7900;
+    border-bottom: #0f7900;
+    border-style: solid;
+    border-width: 3px;
+    font-weight: bold;
+    background-color: #14a000;
+    margin: 0px 10px 0 10px;
+    padding: 6px;
+    transition: 0.2s;
+}
+
+#app {
+    grid-area: app;
+    display: grid;
+    align-items: center;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+form {
+    margin: 0 25% 0 25%;
+}
+
+input, label {
+    margin-top: 10%;
+    width: 100%;
+    display: grid;
+    text-align: center;
+}
+
+input {
+    font-size: 4vh;
+}
+
+label {
+    font-weight: bold;
+    font-size: 5vh;
+}
+
+input {
+    border: 3px solid #24241b;
+}
+
+.btn {
+    font-size: 3vh;
+    position: absolute;
+    text-align: center;
+    width: 20%;
+    left: 38%;
+    top: 82%;
+    color: white;
+
+    box-shadow: 0 0 0 3px #24241b;
+    padding: 2%;
+    margin: 3px;
+    border-top: #93ea9a;
+    border-left: #93ea9a;
+    border-right: #278e43;
+    border-bottom: #278e43;
+    border-style: solid;
+    border-width: 3px;
+    font-weight: bold;
+    background-color: #31b23d;
+}
+
+.btn:hover {
+    box-shadow: 0 0 0 3px #363629;
+    padding: 2%;
+    margin: 3px;
+    border-top: #3bc765;
+    border-left: #3bc765;
+    border-right: #c9f5cd;
+    border-bottom: #c9f5cd;
+    border-style: solid;
+    border-width: 3px;
+    font-weight: bold;
+    position: absolute;
+    color: white;
+    background-color: #4ad95c;
+    transition: 0.2s;
+}
+
+footer {
+    font-size: 2vh;
+    grid-area: footer;
+    display: grid;
+    align-items: flex-end;
+    color: white;
+    text-align: center;
+    background-color: #000000;
+}
