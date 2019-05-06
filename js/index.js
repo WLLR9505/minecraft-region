@@ -3,7 +3,7 @@ window.onload = function () {
 
     btn.addEventListener('click', () => {
         let inputX = document.getElementById('chunkX').value;
-        let inputZ = document.getElementById('chunkY').value;
+        let inputZ = document.getElementById('chunkZ').value;
         let lblOutput = document.getElementById('output');
 
 
