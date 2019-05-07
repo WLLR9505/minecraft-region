@@ -16,9 +16,8 @@ a {
 }
 
 #main {
-    height: 100%;
     display: grid;
-    grid-template-rows: 20% 65% 15%;
+    grid-template-rows: 20% 70% 10%;
     grid-template-areas: "header"
                          "app"
                          "footer";
@@ -58,7 +57,7 @@ a {
     color: #ffffff;
     text-decoration: none;
     padding: 9px;
-    margin: 0px 10px 0 10px;
+    margin: 0 10px 0 10px;
 }
 
 .scrollMenu  a:hover {
@@ -76,7 +75,7 @@ a {
     border-width: 3px;
     font-weight: bold;
     background-color: #14a000;
-    margin: 0px 10px 0 10px;
+    margin: 0 10px 0 10px;
     padding: 6px;
     transition: 0.2s;
 }
@@ -93,8 +92,8 @@ form {
     margin: 0 25% 0 25%;
 }
 
-input, label {
-    margin-top: 10%;
+input, #output {
+    margin-bottom: 10%;
     width: 100%;
     display: grid;
     text-align: center;
@@ -102,15 +101,17 @@ input, label {
 
 input {
     font-size: 4vh;
+    border: 3px solid #24241b;
+}
+
+#output {
+    font-size: 5vh;
+    font-weight: bold;
 }
 
 label {
-    font-weight: bold;
-    font-size: 5vh;
-}
-
-input {
-    border: 3px solid #24241b;
+    color: #303030;
+    font-size: 2vh;
 }
 
 .btn {
@@ -119,7 +120,7 @@ input {
     text-align: center;
     width: 20%;
     left: 38%;
-    top: 82%;
+    top: 88%;
     color: white;
 
     box-shadow: 0 0 0 3px #24241b;
@@ -152,12 +153,28 @@ input {
     transition: 0.2s;
 }
 
+span {
+    text-align: left;
+    width: 50%;
+    color: #ffffff;
+}
+
+footer > a {
+    width: 50%;
+    text-align: right;
+}
+
+footer > a:hover {
+    color: #4ad95c;
+}
+
 footer {
     font-size: 2vh;
     grid-area: footer;
-    display: grid;
+    display: inline-flex;
     align-items: flex-end;
     color: white;
     text-align: center;
     background-color: #000000;
+    padding: 0 15px 5px 15px;
 }
