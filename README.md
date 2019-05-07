@@ -1,7 +1,7 @@
 # region-mca
 [![CodeFactor](https://www.codefactor.io/repository/github/wllr9505/region-mca/badge)](https://www.codefactor.io/repository/github/wllr9505/region-mca)
 
-Detecte os arquivos *r.x.z.mca* onde se encontram usas construções.
+Detecte os arquivos *r.x.z.mca* onde se encontram suas construções.
 
 ## Pra quê serve?
 ### Imagine o seguinte problema:
