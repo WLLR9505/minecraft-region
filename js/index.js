@@ -11,5 +11,6 @@ window.onload = function () {
         let regionZ = Number(inputZ) >> 5;
 
         lblOutput.innerText = `r.${regionX}.${regionZ}.mca`;
+        window.location.href = '#application';
     });
 };
